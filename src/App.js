@@ -1,39 +1,23 @@
-import Directory from './components/directory/directory.component';
+import { Routes, Route } from 'react-router-dom';
 
+import Home from './routes/home/home.component';
+import Navigation from './routes/navigation/navigation.component';
+import SignIn from './routes/sign-in/sign-in.component';
+
+const Shop = () => {
+  return <h1>I am the shop page</h1>
+};
 
 const App = () => {
-    const categories = [
-      {
-        id: 1,
-        title: 'Finerlings',
-        imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2021/04/whatsapp-image-2023-04-09-at-8.00.36-pm-jpeg-1.webp',
-      },
-      {
-        id: 2,
-        title: 'Juveniles',
-        imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2021/04/whatsapp-image-2023-03-29-at-11.42.37-pm-jpeg-1.webp',
-      },
-      {
-        id: 3,
-        title: 'BBQ Sizes',
-        imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2023/04/whatsapp-image-2023-03-21-at-7.15.30-am-1.jpeg',
-      },
-      {
-        id: 4,
-        title: 'Smoked Fishes',
-        imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2021/04/shopping-2.png',
-      },
-      {
-        id: 5,
-        title: 'Broiler Chickens',
-        imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2023/04/whatsapp-image-2023-04-06-at-1.58.18-pm-jpeg-1.webp',
-      },
-    ];
-
     return (
-      <Directory categories={categories}/>
-    );
-
+      <Routes>
+        <Route path='/' element={<Navigation />}>
+          <Route index element={<Home />} /> 
+          <Route path='shop' element={<Shop />} /> 
+          <Route path='sign-in' element={<SignIn />} /> 
+        </Route>
+      </Routes>
+    ); 
 };
 
 export default App;
