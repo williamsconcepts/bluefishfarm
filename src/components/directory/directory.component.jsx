@@ -6,31 +6,31 @@ const categories = [
     {
       id: 1,
       title: 'Fingerlings',
-      imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2021/04/whatsapp-image-2023-04-09-at-8.00.36-pm-jpeg-1.webp',
+      imageUrl: 'https://drive.google.com/file/d/1Ada1jf5fG8NH81AeKnNRa57ftbeEZDD3/view?usp=share_link',
       route: 'shop/fingerlings'
     },
     {
       id: 2,
       title: 'Juveniles',
-      imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2021/04/whatsapp-image-2023-03-29-at-11.42.37-pm-jpeg-1.webp',
+      imageUrl: 'https://drive.google.com/file/d/14JouX9s6LD-1mMbdcrc5kIQaPR_DFjOX/view?usp=share_link',
       route: 'shop/juveniles'
     },
     {
       id: 3,
       title: 'BBQ Sizes',
-      imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2023/04/whatsapp-image-2023-03-21-at-7.15.30-am-1.jpeg',
+      imageUrl: 'https://drive.google.com/file/d/1smvBpsbSh1kAzByxpCfCqKdqWiYHTGWd/view?usp=share_link',
       route: 'shop/bbq sizes'
     },
     {
       id: 4,
       title: 'Smoked/Smokables',
-      imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2021/04/shopping-2.png',
+      imageUrl: 'https://drive.google.com/file/d/12Ag1H3ZDzTc41-iI1ke5Qmc265NOUh2H/view?usp=share_link',
       route: 'shop/smoked-fish'
     },
     {
       id: 5,
       title: 'Poultry Birds',
-      imageUrl: 'https://bluefishfarm.org/wp-content/uploads/2023/04/whatsapp-image-2023-04-06-at-1.58.18-pm-jpeg-1.webp',
+      imageUrl: 'https://drive.google.com/file/d/1-gHyJ49Wr35qV0ZXC0YM3Zbgts4rmBMZ/view?usp=share_link',
       route: 'shop/poultry birds'
     },
   ];
