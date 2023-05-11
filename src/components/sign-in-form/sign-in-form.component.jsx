@@ -5,12 +5,11 @@ import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 
 
 import { 
+    signInAuthUserWithEmailAndPassword,
     signInWithGooglePopup, 
-    createUserDocumentFromAuth,
-    signInAuthUserWithEmailAndPassword
  } from '../../utils/firebase/firebase.utils';
 
-import {SignInContainer, ButtonContainer} from './sign-in-form.styles';
+import {SignInContainer, ButtonsContainer} from './sign-in-form.styles';
 
 const defaultFormFields = {
     email: '',
@@ -35,24 +34,31 @@ const SignInForm = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
+        // try {
+        //      await signInAuthUserWithEmailAndPassword(
+        //         email, 
+        //         password
+        //         );
+        //     resetFormFields();
+        // } catch(error) {
+        //     switch(error.code) {
+        //         case 'auth/wrong-password':
+        //             alert('incorrect password for email');
+        //             break;
+        //         case 'auth/user-not-found':
+        //             alert('no user associated with this email');
+        //             break;
+        //         default:
+        //             console.log(error);
+        //     }
+        // }   
+        
         try {
-            const {user} = await signInAuthUserWithEmailAndPassword(
-                email, 
-                password
-                );
+            await signInAuthUserWithEmailAndPassword(email, password);
             resetFormFields();
-        } catch(error) {
-            switch(error.code) {
-                case 'auth/wrong-password':
-                    alert('incorrect password for email');
-                    break;
-                case 'auth/user-not-found':
-                    alert('no user associated with this email');
-                    break;
-                default:
-                    console.log(error);
-            }
-        }       
+          } catch (error) {
+            console.log('user sign in failed', error);
+          }
     };
 
     const handleChange = (event) => {
@@ -73,10 +79,10 @@ const SignInForm = () => {
                 
                 <FormInput label="Password"  type="password" required onChange={handleChange} name="password" value={password} />
 
-                <ButtonContainer>                
+                <ButtonsContainer>                
                 <Button type="submit">Sign in</Button>
                 <Button type='button' buttonType={BUTTON_TYPE_CLASSES.google} onClick={signInWithGoogle}>Google Sign in</Button>
-                </ButtonContainer>
+                </ButtonsContainer>
             </form>
         </SignInContainer>
     );
