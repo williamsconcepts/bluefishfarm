@@ -54,6 +54,8 @@ export const CartContext = createContext({
 const CART_ACTION_TYPES = {
   SET_CART_ITEMS: 'SET_CART_ITEMS',
   SET_CART_OPEN: 'SET_CART_OPEN',
+  SET_CART_COUNT: 'SET_CART_COUNT',
+  SET_CART_TOTAL: 'SET_CART_TOTAL',
 }
 
 const INITIAL_STATE = {
@@ -94,20 +96,21 @@ export const CartProvider = ({ children }) => {
       0
     );
 
-    const newCartTotal = cartItems.reduce(
-      (total, cartItem) => total + cartItem.quantity,
+    const newCartTotal = newCartItems.reduce(
+      (total, cartItem) => total + cartItem.quantity * cartItem.price,
       0
     );
 
-    dispatch( 
-      createAction(CART_ACTION_TYPES.SET_CART_ITEMS, {
-        cartItems: newCartItems, 
-        cartTotal: newCartTotal, 
-        cartItemCount: newCartCount 
-    })
-  );
+    const payload = {
+      cartItems: newCartItems,
+      cartItemCount: newCartCount,
+      cartTotal: newCartTotal,
+    };
 
-};
+    dispatch(createAction(CART_ACTION_TYPES.SET_CART_ITEMS, payload));
+  };
+
+
 
   const addItemToCart = (productToAdd) => {
     const newCartItems = addCartItem(cartItems, productToAdd);
@@ -126,10 +129,8 @@ export const CartProvider = ({ children }) => {
   };
 
   const setIsCartOpen = (bool) => {
-    dispatch(
-      createAction(CART_ACTION_TYPES.SET_CART_OPEN ,bool)
-  );
-};
+    dispatch({ type: CART_ACTION_TYPES.SET_CART_OPEN, payload: bool });
+  };
     
 
   const value = {
