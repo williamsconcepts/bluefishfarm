@@ -2,73 +2,73 @@
     {
       "id": 1,
       "name": "Fingerlings",
-      "imageUrl": "https://drive.google.com/file/d/1Ada1jf5fG8NH81AeKnNRa57ftbeEZDD3/view?usp=share_link",
+      "imageurl": "https://greentrrb.com/bluefish/fingerlings.jpeg",
       "price": 25
     },
     {
       "id": 2,
       "name": "Juvenile 5cm",
-      "imageUrl": "https://drive.google.com/file/d/1Kuy8LbPWHA1SJahWlA10rHzBffGphax_/view?usp=share_link",
+      "imageurl": "https://drive.google.com/file/d/1Kuy8LbPWHA1SJahWlA10rHzBffGphax_/view?usp=share_link",
       "price": 100
     },
     {
       "id": 3,
       "name": "Juvenile 10cm",
-      "imageUrl": "https://drive.google.com/file/d/14JouX9s6LD-1mMbdcrc5kIQaPR_DFjOX/view?usp=share_link",
+      "imageurl": "https://drive.google.com/file/d/14JouX9s6LD-1mMbdcrc5kIQaPR_DFjOX/view?usp=share_link",
       "price": 200
     },
     {
       "id": 4,
       "name": "Smokable-size Per Kg",
-      "imageUrl": "https://drive.google.com/file/d/1rRUcl7xA_wix8hAJRjHs3GKQCfFkFdzY/view?usp=share_link",
+      "imageurl": "https://drive.google.com/file/d/1rRUcl7xA_wix8hAJRjHs3GKQCfFkFdzY/view?usp=share_link",
       "price": 1700
     },
     {
       "id": 5,
       "name": "BBQ size per Kg",
-      "imageUrl": "https://drive.google.com/file/d/1R5UO8Rvy3IJfQPlCj_YaJsIgpX5qVmEc/view?usp=share_link",
+      "imageurl": "https://drive.google.com/file/d/1R5UO8Rvy3IJfQPlCj_YaJsIgpX5qVmEc/view?usp=share_link",
       "price": 2000
     },
     {
       "id": 6,
       "name": "Broiler Chicken 3 months old",
-      "imageUrl": "https://drive.google.com/file/d/1-gHyJ49Wr35qV0ZXC0YM3Zbgts4rmBMZ/view?usp=share_link",
+      "imageurl": "https://drive.google.com/file/d/1-gHyJ49Wr35qV0ZXC0YM3Zbgts4rmBMZ/view?usp=share_link",
       "price": 5000
     },
     {
       "id": 7,
       "name": "Broiler Chicken 1 month old",
-      "imageUrl": "https://drive.google.com/file/d/1zfQouuOwbsUloQDJGRnjDvFQa2LH6ar2/view?usp=share_link",
+      "imageurl": "https://drive.google.com/file/d/1zfQouuOwbsUloQDJGRnjDvFQa2LH6ar2/view?usp=share_link",
       "price": 4000
     },
     {
       "id": 8,
       "name": "Broiler Chicks 2 weeks old",
-      "imageUrl": "https://drive.google.com/file/d/1ac2Js3Zd7Qg8fiPLFrQEQCY0JYjqWQLp/view?usp=share_link",
+      "imageurl": "https://drive.google.com/file/d/1ac2Js3Zd7Qg8fiPLFrQEQCY0JYjqWQLp/view?usp=share_link",
       "price": 1500
     },
     {
       "id": 9,
       "name": "English Turkey chick",
-      "imageUrl": "https://drive.google.com/file/d/1zbVmrFTBRnkyDH37J1LUsTPKORcBtA1r/view?usp=share_link",
+      "imageurl": "https://drive.google.com/file/d/1zbVmrFTBRnkyDH37J1LUsTPKORcBtA1r/view?usp=share_link",
       "price": 4000
     },
     {
         "id": 10,
         "name": "English Turkey",
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0uqEGJ6RrG4d_RohDsF3NQgcluywxeCWxcg&usqp=CAU",
+        "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0uqEGJ6RrG4d_RohDsF3NQgcluywxeCWxcg&usqp=CAU",
         "price": 30000
     },
     {
         "id": 11,
         "name": "Smoked-fish 4 pcs",
-        "imageUrl": "https://drive.google.com/file/d/1mGNyQiztFf1yBYgN9NkzbOB6T2QH-Fae/view?usp=share_link",
+        "imageurl": "https://drive.google.com/file/d/1mGNyQiztFf1yBYgN9NkzbOB6T2QH-Fae/view?usp=share_link",
         "price": 3500
       },
       {
         "id": 12,
         "name": "Smoked-fish 5 pcs",
-        "imageUrl": "https://drive.google.com/file/d/12Ag1H3ZDzTc41-iI1ke5Qmc265NOUh2H/view?usp=share_link",
+        "imageurl": "https://drive.google.com/file/d/12Ag1H3ZDzTc41-iI1ke5Qmc265NOUh2H/view?usp=share_link",
         "price": 4500
       }
   ]
